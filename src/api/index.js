@@ -1,8 +1,8 @@
 const express = require('express');
 const cors = require("cors")
-const { port } = require("./config/index")
+const { port } = require("../config/index")
 
-const itemsRoutes = require('./routes/items');
+const itemsRoutes = require('../routes/items');
 
 
 const app = express();
