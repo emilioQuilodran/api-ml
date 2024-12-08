@@ -10,9 +10,9 @@ const mapSearchResults = (data) => {
         },
         picture: item.thumbnail,
         condition: item.condition,
-        free_shipping: item.shipping.free_shipping
+        free_shipping: item.shipping.free_shipping,
+        state_name: item.address.state_name
     }));
-
     return { categories, items };
 };
 
@@ -29,6 +29,7 @@ const mapItemDetails = (item, description) => ({
     free_shipping: item.shipping.free_shipping,
     sold_quantity: item.sold_quantity,
     description: description.plain_text
+    
 });
 
 module.exports = {
