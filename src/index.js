@@ -10,7 +10,7 @@ const PORT = process.env.PORT;
 
 app.use(express.json());
 app.use(cors({
-    origin: "http://localhost:5173"
+    origin: '*'
 }))
 app.use('/v1/api/items', itemsRoutes)
 
